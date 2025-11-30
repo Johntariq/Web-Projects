@@ -310,33 +310,71 @@
         <!-- Home Page Section -->
         <section id="home" class="page-section">
             <!-- Hero Slider -->
-            <div class="relative w-full h-[60vh] md:h-[80vh] overflow-hidden">
-                <div id="slider-wrapper" class="flex h-full transition-transform duration-700 ease-in-out"> 
-                    <div class="hero-slide">
-                        <img src="Tailoring Website\main.jpg" alt="Festive Unstitched Luxury in Every Thread" class="w-full h- object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-20">
-                            <div class="text-center text-white p-4">
-                                <button onclick="showPage('custom-order')" class="btn-primary py-3 px-8 rounded-full font-semibold text-lg">Explore Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hero-slide">
-                        <img src="https://images.unsplash.com/photo-1633193354112-9c3f03b57d6f?q=80&w=1974&auto=format&fit=crop" alt="Custom made shalwar kameez" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-20">
-                            <div class="text-center text-white p-4">
-                                <button onclick="showPage('dresses')" class="btn-primary py-3 px-8 rounded-full font-semibold text-lg">Explore Styles</button>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="hero-slide">
-                        <img src="https://images.unsplash.com/photo-1610028290197-85b8635c03f4?q=80&w=1974&auto=format&fit=crop" alt="Designer festive frocks" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-20">
-                            <div class="text-center text-white p-4">
-                                <button onclick="showPage('custom-order')" class="btn-primary py-3 px-8 rounded-full font-semibold text-lg">Design Yours</button>
-                            </div>
-                        </div>
-                    </div>
+<div class="relative w-full h-[60vh] md:h-[80vh] overflow-hidden">
+    <div id="slider-wrapper" class="flex h-full transition-transform duration-300 ease-in-out">
+
+        <!-- Slide 1 -->
+        <div class="hero-slide">
+            <picture class="w-full h-full block">
+    <source media="(min-width:1024px)" srcset="images/mdekstop.jpg">
+    <source media="(min-width:640px)" srcset="images/mtablet.jpg">
+
+    <img src="images/mdevice.jpg"
+         alt="Designer festive frocks" 
+         class="w-full h-full object-cover">
+</picture>
+
+
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-20">
+                <div class="text-center text-white p-4 h-10">
+                    <button onclick="showPage('custom-order')" class="btn-primary py-3 px-8 rounded-full font-semibold text-lg ">Explore Now</button>
                 </div>
+            </div>
+        </div>
+
+          <div class="hero-slide">
+            <picture class="w-full h-full block">
+                <source media="(min-width:1024px)" srcset="images\hero3.png">
+                <source media="(min-width:640px)" srcset="images\hero3.png">
+                <img src="images\Hero3mob.jpg"
+                     alt="Designer festive frocks" 
+                     class="w-full h-full object-cover">
+            </picture>
+
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-20">
+                <div class="text-center text-white p-4 h-10">
+                     <!-- <h1 class="text-4xl md:text-6xl font-bold mb-4">Celebrate in Style</h1>
+                            <p class="text-lg md:text-xl mb-6">Custom-designed festive wear for every occasion.</p> -->
+                    <button onclick="showPage('custom-order')" class="btn-primary py-3 px-8 rounded-full font-semibold text-lg">Design Yours</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Slide 2 -->
+        <div class="hero-slide">
+            <picture class="w-full h-full block">
+                <source media="(min-width:1024px)" srcset="images\hero 3.png">
+                <!-- <source media="(min-width:640px)" srcset="images\hero 3.png"> -->
+                <img src="images\hero2mob.jpg"
+                     alt="Custom made shalwar kameez" 
+                     class="w-full h-full object-cover">
+            </picture>
+
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-10">
+                <div class="text-center text-white p-4">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 h-30">Timeless Elegance, Modern Craft</h1>
+                            <p class="text-lg md:text-xl mb-6 h-10">Experience the finest made-to-measure ladies tailoring.</p>
+                    <button onclick="showPage('dresses')" class="btn-primary py-3 px-8 rounded-full font-semibold text-lg">Explore Styles</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
                 <button onclick="changeSlide(-1)" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/50 p-2 rounded-full hover:bg-white transition-colors z-10">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
                 </button>
@@ -1272,6 +1310,7 @@
     </script>
 </body>
 </html>
+
 
 
 
